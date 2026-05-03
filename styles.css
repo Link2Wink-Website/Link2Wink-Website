@@ -822,3 +822,30 @@ section {
   object-fit: cover;
   border-radius: 2px;
 }
+
+/* MOBILE HERO FIX */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 100svh;
+    overflow: hidden;
+  }
+
+  .hero > .container,
+  .hero .container {
+    max-width: 100%;
+    margin-left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    transform: translateY(-40px);
+  }
+
+  .hero-headline {
+    font-size: clamp(32px, 8.6vw, 44px);
+    max-width: 100%;
+  }
+
+  .line-lock {
+    white-space: normal;
+    display: inline;
+  }
+}
