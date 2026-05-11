@@ -848,4 +848,32 @@ section {
     white-space: normal;
     display: inline;
   }
+
+  @media (max-width: 768px) {
+  .navbar-content {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 8px;
+  }
+
+  .nav-links li {
+    padding: 0 8px;
+  }
+
+  .nav-links > li:not(:last-child)::after {
+    margin-left: 8px;
+  }
+
+  .lang-menu {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+ }
 }
